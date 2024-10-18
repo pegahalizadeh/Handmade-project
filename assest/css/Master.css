@@ -1,0 +1,428 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header-top {
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.701);
+
+}
+
+.box-header {
+
+    >input {
+        padding: 10px 10px;
+        border: 1px solid white;
+        background-color: #dcdcdc75;
+        width: 165%;
+        height: 45px;
+
+    }
+
+    >h1 {
+        color: #bc4b20;
+
+    }
+
+    >span {
+        color: #bc4b20;
+        margin: 10px 50px;
+        padding: 10px 10px;
+    }
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.925);
+
+    padding: 0 215px;
+    >.row {
+
+        height: 100%;
+
+        >* {
+
+            height: inherit;
+        }
+
+        >nav {
+            width: 50%;
+
+            >ul {
+                height: 100%;
+                gap: 10px;
+
+                >li {
+
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+
+                    >a {
+
+                        padding: 10px 15px;
+                        color: rgba(0, 0, 0, 0.762);
+                        text-transform: capitalize;
+                        position: relative;
+
+                        &:hover {
+                            color: #bc4b20;
+
+                            &::after {
+                                width: 100%;
+                                left: 0;
+                                bottom: 0;
+                                opacity: 1;
+                            }
+                        }
+
+                        &::after {
+                            content: '';
+                            display: flex;
+                            width: 70%;
+                            height: 2px;
+                            background-color: #bc4b20;
+                            position: absolute;
+                            transition: .4s;
+                            left: 15%;
+                            bottom: 30px;
+                            opacity: 0;
+                            color: white;
+                        }
+                    }
+
+                    &:hover {
+                        >ul {
+
+                            left: 0;
+                        }
+                    }
+
+                    >ul {
+                        transition: .4s;
+
+                        position: absolute;
+                        width: 200%;
+
+                        top: 100px;
+                        left: -1000px;
+                        background-color: rgba(255, 255, 255, 0.925);
+                        box-shadow: 1px 1px gainsboro;
+
+                        >li {
+
+                            height: 40px;
+
+                            >a {
+                                display: flex;
+                                width: 100%;
+                                height: 100%;
+                                align-items: center;
+                                padding-left: 10px;
+
+                                &:hover {
+                                    background-color: #bf633edb;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+.container{
+    display: flex;
+    align-items:flex-start ;
+    margin: 20px;
+    justify-content: space-around;
+    >.card{
+        width: 30%;
+        padding: 10px;
+        box-shadow: 0px 4px 8px gainsboro;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+        transition: tranform 0.3s ease, box-shadow 0.3s ease;
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px gainsboro;
+        }
+        >img{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        >h3{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p{
+           
+            color: grey;
+        }
+    }
+
+}
+.box{
+    
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &:hover{
+        background-color: #cd947d;
+        color: white;
+    }
+    >span{
+        color: #bc4b20;
+        margin-left: -30px;
+        padding-top: 30px;
+
+    }
+    >h2,p{
+       margin: 10px 15px;
+    }
+}
+.divider{
+    border: none;
+    height: 2px;
+    background-color: rgba(220, 220, 220, 0.825);
+    width: 80%;
+    margin: 20px auto;
+  
+}
+.buy-box{
+    text-align: center;
+    padding: 70px 13px;
+    margin: 13px 15px;
+    >h1{
+        padding-bottom: 30px;
+      
+    }
+    >p{
+        padding-bottom: 35px;
+        line-height: 1.8;
+    }
+    >a{
+        background-color: #bc4b20;
+        padding:15px 10px;
+        border-radius: 8px;
+        color: white;
+        &:hover{
+            background-color: #9b3006;
+        }
+    }
+}
+.section-card2{
+    >h3{
+        margin-left: 40px;
+        padding-bottom: 10px;
+        color: rgba(0, 0, 0, 0.63);
+    }
+}
+.container{
+    display: flex;
+    align-items:flex-start ;
+    margin: 20px;
+    justify-content: space-around;
+    >.card-2{
+        width: 23%;
+        padding: 10px;
+        box-shadow: 0px 4px 8px gainsboro;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+        transition: tranform 0.3s ease, box-shadow 0.3s ease;
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px gainsboro;
+        }
+        >img{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        p{
+           
+            color:rgba(0, 0, 0, 0.873);
+            padding: 13px;
+        }
+    }
+
+}
+.section-card3{
+    margin: 160px auto;
+    >h3,h4{
+        margin-left: 40px;
+        padding-bottom: 10px;
+        color: rgba(0, 0, 0, 0.63);
+    }
+   
+}
+.container-2{
+    display: flex;
+    align-items:flex-start ;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+    >.card-3{
+        width: 20%;
+        padding: 10px;
+       /* box-shadow: 0px 4px 8px gainsboro;
+        border-radius: 8px;*/
+        text-align: center;
+        background-color: #fff;
+       /* transition: tranform 0.3s ease, box-shadow 0.3s ease;*/
+       /* &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px gainsboro;
+        }*/
+        >span{
+            color: #bc4b20;
+        }
+        >img{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        p{
+           
+            color:rgba(0, 0, 0, 0.873);
+            padding: 13px;
+        }
+    }
+
+}
+
+.buy-box-2{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/hero-10.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    padding: 70px 13px;
+    >h1{
+        padding-bottom: 30px;
+        color: white;
+      
+    }
+    >p{
+        padding-bottom: 35px;
+        line-height: 1.8;
+        color: white;
+    }
+    >a{
+        background-color: #bc4b20;
+        padding:15px 10px;
+        border-radius: 8px;
+        color: white;
+        &:hover{
+            background-color: #9b3006;
+        }
+    }
+}
+.decorat-part{
+    padding: 106px 0;
+    margin: 55px 0;
+    background-color: rgba(122, 163, 147, 0.782);
+    clip-path: polygon(0 10%,100% 0, 100% 85%, 0 90%);
+    >h4,span{
+        margin-left: 40px;
+        padding-bottom: 10px;
+        color: rgba(0, 0, 0, 0.63);
+    }
+}
+
+.container-3{
+    display: flex;
+    align-items:flex-start ;
+    margin: 20px;
+    justify-content: space-around;
+    >.card{
+        width: 30%;
+        padding: 10px;
+     border-radius: 8px;
+        text-align: center;
+        
+    
+      
+        >img{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        >h3{
+            font-weight: bold;
+            margin-top: 30px;
+            transition: transform 0.3 ease;
+            &:hover{
+                color: #bc4b20;
+                transform:scale(1.05);
+                background-color: rgba(255, 223, 196, 0.448);
+             
+            }
+        }
+        p{
+           
+            color: grey;
+        }
+    }
+
+}
+.contact{
+    background-image: url(../img/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    height: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(220, 220, 220, 0.825);
+    >h2{
+        margin-bottom: 35px;
+        color: rgba(0, 0, 0, 0.738);
+    }
+    >p{
+        margin-top: 40px;
+        color: #c53f09;
+    }
+    >.contact-box{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        >input{
+            background-color: gainsboro;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 20px 40px;
+            width: 30%;
+
+        }
+        >button{
+            width: 30%;
+            border-radius: 30px;
+            background-color: gainsboro;
+            color: rgba(0, 0, 0, 0.581);
+            border: none;
+            font-size: 20px;
+            &:hover{
+                background-color: rgba(192, 52, 52, 0.76);
+                color: darkgray;
+            }
+        }
+    }
+   
+  
+}
